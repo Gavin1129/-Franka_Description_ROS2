@@ -1,0 +1,13 @@
+Build:
+    colcon build --packages-select franka_description
+
+Source:
+    . install/setup.bash 
+
+Launch:
+    ros2 launch franka_description display.launch.py 
+
+GUI: 
+    ros2 run joint_state_publisher_gui joint_state_publisher_gui
+
+rqt_graph
